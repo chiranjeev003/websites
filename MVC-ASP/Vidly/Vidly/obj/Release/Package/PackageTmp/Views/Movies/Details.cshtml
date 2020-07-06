@@ -1,0 +1,22 @@
+﻿@model Vidly.Models.Movies
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*
+    This is a comment line block.
+        Multiple lines can be written here.
+*@
+
+<h2>@Model.Name</h2>
+<h3>Movie Type: @Model.Genre.Name</h3>
+@if (Model.ReleaseDate.HasValue)
+{
+    <h3>Date of Release: @Model.ReleaseDate.Value.ToString("dd/MM/yyyy")</h3>
+}
+@if (Model.DateAdded.HasValue)
+{
+    <h3>Date of Store: @Model.DateAdded.Value.ToString("dd/MM/yyyy")</h3>
+}
+<h3>Number in stock: @Model.NumberInStock</h3>

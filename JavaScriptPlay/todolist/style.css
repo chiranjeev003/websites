@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+}
+
+.row {
+    margin: 10% 0% 0% 35%;
+}
+
+#save,
+#DeleteAll {
+    margin-left: 10px;
+}
+
+.navbar {
+    background-color: rgba(175, 35, 77, 0.822);
+    color: rgb(255, 255, 255);
+}
+
+.checkbox {
+    margin-left: 50px;
+}

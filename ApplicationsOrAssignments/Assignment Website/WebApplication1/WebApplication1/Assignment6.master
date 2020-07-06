@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Assignment6.master.cs" Inherits="WebApplication1.Assignment6" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        * {
+            margin: 0px;
+        }
+
+        .cell-left {
+            width: 45vw;
+            padding: 10px;
+            font-size: larger;
+            text-align: right;
+        }
+
+        .cell-right {
+            width: 55vw;
+            padding: 10px;
+        }
+
+        .InputField {
+            width: 20vw;
+            font-size: larger;
+            border: solid 2px darkgrey;
+            padding: 3px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header id="header" style="margin-top: 20px; width: 100vw; text-align: center;">
+        <h1>Welcome to Assignment 6 - Chiranjeev Mazumdar</h1>
+    </header>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <footer id="footer" style="width: 100vw; font-weight: 900; text-align: center; margin-top: 20px; background-color: rgba(0,0,0,0.87); padding-top: 15px; height: 35px; color: whitesmoke;">
+        Chiranjeev@Assignment6
+    </footer>
+
+</body>
+</html>

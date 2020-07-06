@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Movies</h2>
+
+<table id="movies" class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Genre</th>
+        </tr>
+    </thead>
+    <tbody>
+        @*@foreach (var movies in Model)
+            {
+                <tr>
+                    <td>
+                        <a href="@Url.Action("Edit/" + movies.ID, "Movies")">@movies.Name</a>
+                    </td>
+                    <td>
+                        <span>@movies.Genre.Name</span>
+                    </td>
+                </tr>
+            }*@
+    </tbody>
+</table>
+@section scripts{
+
+    <script>
+
+        $(document).ready(function () {
+
+            var table = $('#movies').DataTable({
+                ajax: {
+                    url: '../../api/movies',
+                    dataSrc: ""
+                },
+                columns: [
+                    {
+                        data: "name"
+                    },
+                    {
+                        data: "genre.name"
+                    }
+                ]
+            });
+
+        });
+    </script>
+}

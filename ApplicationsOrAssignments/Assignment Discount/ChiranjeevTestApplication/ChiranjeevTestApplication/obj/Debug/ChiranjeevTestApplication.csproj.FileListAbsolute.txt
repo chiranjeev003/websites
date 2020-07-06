@@ -1,0 +1,6 @@
+C:\Users\chiranjeev\Documents\Visual Studio 2015\Projects\day1\Assignment\ChiranjeevTestApplication\ChiranjeevTestApplication\bin\ChiranjeevTestApplication.exe.config
+C:\Users\chiranjeev\Documents\Visual Studio 2015\Projects\day1\Assignment\ChiranjeevTestApplication\ChiranjeevTestApplication\bin\ChiranjeevTestApplication.exe
+C:\Users\chiranjeev\Documents\Visual Studio 2015\Projects\day1\Assignment\ChiranjeevTestApplication\ChiranjeevTestApplication\bin\ChiranjeevTestApplication.pdb
+C:\Users\chiranjeev\Documents\Visual Studio 2015\Projects\day1\Assignment\ChiranjeevTestApplication\ChiranjeevTestApplication\obj\Debug\ChiranjeevTestApplication.csprojResolveAssemblyReference.cache
+C:\Users\chiranjeev\Documents\Visual Studio 2015\Projects\day1\Assignment\ChiranjeevTestApplication\ChiranjeevTestApplication\obj\Debug\ChiranjeevTestApplication.exe
+C:\Users\chiranjeev\Documents\Visual Studio 2015\Projects\day1\Assignment\ChiranjeevTestApplication\ChiranjeevTestApplication\obj\Debug\ChiranjeevTestApplication.pdb

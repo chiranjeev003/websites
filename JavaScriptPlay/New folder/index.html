@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IndexedDB note store</title>
+  </head>
+  <body>
+    <div id="app"><h1>It's there soon</h1></div>
+    <div id="textbox">
+      <textarea id="newmessage"></textarea>
+      <button onclick="submitNote()">Add note</button>
+      <button onclick="flipNoteOrder()">Flip note order</button>
+    </div>
+    <div id="notes"></div>
+    <hr />
+    <h1 id="godPrint"></h1>
+    <script src="db.js"></script>
+    <script>
+      function flipNoteOrder(notes) {
+        reverseOrder = !reverseOrder;
+        getAndDisplayNotes(db);
+      }
+    </script>
+  </body>
+</html>
