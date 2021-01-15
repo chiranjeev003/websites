@@ -1,0 +1,3 @@
+This is a student portal application created in MVC.
+For database connection Inline queries have been used instead of Entity Framework for experimenting with the DB connections. As in most of the legacy applications, db connection
+is estabilished using constructors.
