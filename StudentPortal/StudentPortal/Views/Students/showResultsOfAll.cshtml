@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "Results";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>All results</h2>
+
+<table id="students" class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>EC1</th>
+            <th>EC2</th>
+            <th>EC3</th>
+            <th>EC4</th>
+            <th>EC5</th>
+            <th>Result</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var students in Model)
+        {
+            <tr>
+                <td>
+                    <span>@students.FStudentName</span>
+                </td>
+                <td>
+                    <span>@students.EC1</span>
+                </td>
+                <td>
+                    <span>@students.EC2</span>
+                </td>
+                <td>
+                    <span>@students.EC3</span>
+                </td>
+                <td>
+                    <span>@students.EC4</span>
+                </td>
+                <td>
+                    <span>@students.EC5</span>
+                </td>
+                <td>
+                    @{ if (students.EC1 < 30 || students.EC2 < 30 || students.EC3 < 30 || students.EC4 < 30 || students.EC5 < 30)
+                        { <span>Fail</span>}
+                        else
+                        {<span>Pass</span>
+                        }
+                    }
+                </td>
+                <td>
+                    <span>@students.TotalMarks</span>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p>
+
+    <a class="btn btn-primary" href="@Url.Action("showResultWithGraceMarks/", "Students")">Show Results With Grace Marks</a>
+
+</p>
+
+

@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Results with Grace Marks";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Result With Grace Marks Added</h2>
+
+
+<table id="students" class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>EC1</th>
+            <th>EC2</th>
+            <th>EC3</th>
+            <th>EC4</th>
+            <th>EC5</th>
+            <th>Result</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var students in Model)
+        {
+            <tr>
+                <td>
+                    <span>@students.FStudentName</span>
+                </td>
+                <td>
+                    <span>@students.EC1</span>
+                </td>
+                <td>
+                    <span>@students.EC2</span>
+                </td>
+                <td>
+                    <span>@students.EC3</span>
+                </td>
+                <td>
+                    <span>@students.EC4</span>
+                </td>
+                <td>
+                    <span>@students.EC5</span>
+                </td>
+                <td>
+                   <span>@students.Result</span>
+                </td>
+                <td>
+                    <span>@students.TotalMarks</span>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
